@@ -8,7 +8,7 @@ interface Tax {
 
 const TAXES: Tax[] = [
   { name: "IVA servicios digitales", rate: 21, entity: "Nacional (AFIP)" },
-  { name: "Percepción Ganancias/Bienes Personales", rate: 30, entity: "Nacional (AFIP)" },
+  { name: "Percepción Ganancias/Bienes Personales", rate: 0, entity: "Nacional (AFIP)" },
   { name: "Ingresos Brutos", rate: 2, entity: "Provincial" },
   { name: "Cargo bancario / comisión", rate: 0, entity: "Entidad privada" }, // ajustable
 ];
