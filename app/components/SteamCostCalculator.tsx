@@ -49,34 +49,34 @@ const SteamCostCalculator: React.FC = () => {
       <table className="w-full table-auto border-collapse border border-gray-300">
         <thead>
           <tr className="">
-            <th className="border border-gray-300 px-2 py-1">Concepto</th>
-            <th className="border border-gray-300 px-2 py-1">% aplicado</th>
-            <th className="border border-gray-300 px-2 py-1">Monto (ARS)</th>
-            <th className="border border-gray-300 px-2 py-1">Jurisdicción / Entidad</th>
+            <th className="border border-gray-300 dark:border-black px-2 py-1">Concepto</th>
+            <th className="border border-gray-300 dark:border-black px-2 py-1">% aplicado</th>
+            <th className="border border-gray-300 dark:border-black px-2 py-1">Monto (ARS)</th>
+            <th className="border border-gray-300 dark:border-black px-2 py-1">Jurisdicción / Entidad</th>
           </tr>
         </thead>
         <tbody>
           <tr className="">
-            <td className="border border-gray-300 px-2 py-1">Base (USD {usd})</td>
-            <td className="border border-gray-300 px-2 py-1">—</td>
-            <td className="border border-gray-300 px-2 py-1">{(usd * DOLAR_VENTA).toFixed(2)}</td>
-            <td className="border border-gray-300 px-2 py-1">—</td>
+            <td className="border border-gray-300 dark:border-black px-2 py-1">Base (USD {usd})</td>
+            <td className="border border-gray-300 dark:border-black px-2 py-1">—</td>
+            <td className="border border-gray-300 dark:border-black px-2 py-1">{(usd * DOLAR_VENTA).toFixed(2)}</td>
+            <td className="border border-gray-300 dark:border-black px-2 py-1">—</td>
           </tr>
           {TAXES.map((tax) => (
             <tr key={tax.name} className="">
-              <td className="border border-gray-300 px-2 py-1">{tax.name}</td>
-              <td className="border border-gray-300 px-2 py-1">{tax.rate}%</td>
-              <td className="border border-gray-300 px-2 py-1">
+              <td className="border border-gray-300 dark:border-black px-2 py-1">{tax.name}</td>
+              <td className="border border-gray-300 dark:border-black px-2 py-1">{tax.rate}%</td>
+              <td className="border border-gray-300 dark:border-black px-2 py-1">
                 {calculateTaxAmount(tax).toFixed(2)}
               </td>
-              <td className="border border-gray-300 px-2 py-1">{tax.entity}</td>
+              <td className="border border-gray-300 dark:border-black px-2 py-1">{tax.entity}</td>
             </tr>
           ))}
           <tr className=" font-bold">
-            <td className="border border-gray-300 px-2 py-1">Total</td>
-            <td className="border border-gray-300 px-2 py-1">—</td>
-            <td className="border border-gray-300 px-2 py-1">{total.toFixed(2)}</td>
-            <td className="border border-gray-300 px-2 py-1">—</td>
+            <td className="border border-gray-300 dark:border-black px-2 py-1">Total</td>
+            <td className="border border-gray-300 dark:border-black px-2 py-1">—</td>
+            <td className="border border-gray-300 dark:border-black px-2 py-1">{total.toFixed(2)}</td>
+            <td className="border border-gray-300 dark:border-black px-2 py-1">—</td>
           </tr>
         </tbody>
       </table>

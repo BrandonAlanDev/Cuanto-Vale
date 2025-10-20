@@ -63,7 +63,7 @@ const BackgroundArrows: React.FC = () => {
 
       if (Math.random() < 0.04) createArrow();
 
-      // Actualizamos todas las flechas
+      // Actualiza todas las flechas
       const nextArrows: Arrow[] = [];
 
       for (const a of arrows.current) {
@@ -99,7 +99,7 @@ const BackgroundArrows: React.FC = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full -z-10"
+      className="fixed top-0 left-0 w-full h-full z-2"
     />
   );
 };

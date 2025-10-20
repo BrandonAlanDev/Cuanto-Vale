@@ -1,5 +1,3 @@
-import logoDark from "./logo-dark.svg";
-import logoLight from "./logo-light.svg";
 import BackgroundArrows from "~/components/BackgroundArrows";
 import SteamCostCalculator from "~/components/SteamCostCalculator";
 
@@ -7,34 +5,13 @@ export function Welcome() {
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
       <BackgroundArrows/>
-      <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
+      <div className="flex flex-col items-center gap-16 min-h-0 z-3 p-4 rounded-4xl border-2 bg-linear-60 bg-fixed from-black to-[#00032cbe] dark:from-[#ffffff] dark:to-[#f1fcffcc]  text-white dark:text-black drop-shadow-2xl shadow-xl shadow-black dark:shadow-cyan-50 dark:shadow-lg">
         <header className="flex flex-col items-center gap-9">
           <div className="w-[500px] max-w-[100vw] p-4">
             <h1 className="text-4xl">Cuanto Vale?</h1>
             <SteamCostCalculator/>
           </div>
         </header>
-        <div className="max-w-[300px] w-full space-y-6 px-4">
-          <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
-            <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
-              Dolar
-            </p>
-            <ul>
-              {resources.map(({ href, text, icon }) => (
-                <li key={href}>
-                  <a
-                    className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500"
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Steam
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
       </div>
     </main>
   );
