@@ -18,7 +18,6 @@ const Navbar = ()=>{
             <ul className="">
                 <a className="mr-2" href="/dolar">Dolar</a>
                 <a className="mr-2" href="/euro">Euro</a>
-                <a className="mr-2" href="/real">Real</a>
                 <a className="mr-2" href="/latam">LATAM</a>
                 <a className="mr-2" href="/steam">STEAM</a>
             </ul>
