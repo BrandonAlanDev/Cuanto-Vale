@@ -20,7 +20,8 @@ const SteamCostCalculator: React.FC = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = parseFloat(e.target.value);
-    if (!isNaN(value) && value >= 0) {
+    if (isNaN(value)) return;
+    if (value >= 0) {
       setUsd(value);
     }
   };
@@ -39,7 +40,7 @@ const SteamCostCalculator: React.FC = () => {
         <label className="mr-2 font-medium">Monto en USD:</label>
         <input
           type="number"
-          value={usd}
+          value={(usd)?usd:""}
           onChange={handleChange}
           className="border rounded px-2 py-1 w-24"
           min={0}
