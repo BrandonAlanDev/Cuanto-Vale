@@ -1,4 +1,5 @@
 import SteamCostCalculator from "../components/SteamCostCalculator";
+import AdBanner from "~/components/AdBanner";
 
 export default function Steam() {
   return (
@@ -11,6 +12,7 @@ export default function Steam() {
             <h1 className="text-4xl">STEAM</h1>
             <SteamCostCalculator/>
           </div>
+          <AdBanner slot="9471912944"/>
         </header>
       </div>
     </main>

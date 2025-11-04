@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import getDolar from '../scripts/fetchDolar';
 import type {Moneda} from "../scripts/interface";
+import AdBanner from "~/components/AdBanner";
 import { div } from "framer-motion/client";
 
 export default function Dolar() {
@@ -43,6 +44,7 @@ export default function Dolar() {
               </tbody>
             </table>
           </div>
+          <AdBanner slot="9471912944"/>
         </header>
       </div>
     </main>
