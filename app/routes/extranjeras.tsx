@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import getEuro from "../scripts/fetchEuro";
 import type {Moneda} from "../scripts/interface";
+import AdBanner from "~/components/AdBanner";
 
 export default function extranjeras() {
   const [euro,setEuro] = useState<Moneda | null>(null);
@@ -38,6 +39,7 @@ export default function extranjeras() {
             </table>
           <div className="flex flex-col items-start w-[500px] max-w-[100vw] p-4">
           </div>
+          <AdBanner slot="9471912944"/>
         </header>
       </div>
     </main>
