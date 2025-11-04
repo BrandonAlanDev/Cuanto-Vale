@@ -31,12 +31,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6812536998270195" crossOrigin="anonymous"></script>
       </head>
       <body>
         {children}
         <ScrollRestoration />
         <Scripts />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6812536998270195" crossOrigin="anonymous"></script>
       </body>
     </html>
   );
