@@ -17,8 +17,7 @@ const Navbar = ()=>{
             <a href="/" className="flex flex-row"><img src={CuantoSale} className="h-[40px]"/></a>
             <ul className="">
                 <a className="mr-2" href="/dolar">Dolar</a>
-                <a className="mr-2" href="/euro">Euro</a>
-                <a className="mr-2" href="/latam">LATAM</a>
+                <a className="mr-2" href="/otras">Otras</a>
                 <a className="mr-2" href="/steam">STEAM</a>
             </ul>
         </div>
