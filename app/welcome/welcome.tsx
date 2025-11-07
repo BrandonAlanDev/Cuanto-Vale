@@ -10,10 +10,12 @@ export function Welcome() {
           <div className="w-[500px] max-w-[100vw] p-4">
             <h1 className="text-4xl">Cuánto sale?</h1>
           </div>
-          <AdBanner slot="9471912944"/>
         </header>
       </div>
     </main>
+    <div className="flex justify-center items-center w-full m-auto bg-white">
+        <AdBanner slot="9471912944"/>
+    </div>
     </>
   );
 }

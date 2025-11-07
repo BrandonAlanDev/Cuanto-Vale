@@ -39,10 +39,12 @@ export default function extranjeras() {
             </table>
           <div className="flex flex-col items-start w-[500px] max-w-[100vw] p-4">
           </div>
-          <AdBanner slot="9471912944"/>
         </header>
       </div>
     </main>
+    <div className="flex justify-center items-center w-full m-auto bg-white">
+      <AdBanner slot="9471912944"/>
+    </div>
     </>
   );
 }

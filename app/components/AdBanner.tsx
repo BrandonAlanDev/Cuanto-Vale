@@ -27,8 +27,8 @@ export default function AdBanner({ slot, style }: AdBannerProps) {
 
   return (
     <ins
-      className="adsbygoogle"
-      style={style || { display: "block" }}
+      className="adsbygoogle justify-center items-center m-auto"
+      style={style || { display: "block", width: "100%", height: "120px"}}
       data-ad-client="ca-pub-6812536998270195"
       data-ad-slot={slot}
       data-ad-format="auto"
