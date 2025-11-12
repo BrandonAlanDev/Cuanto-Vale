@@ -41,7 +41,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6812536998270195" crossOrigin="anonymous"></script>
-
+        <script src="https://fpyf8.com/88/tag.min.js" data-zone="184962" async data-cfasync="false"></script>
       </head>
       <body>
         {children}
