@@ -43,9 +43,11 @@ export default function extranjeras() {
         </header>
       </div>
     </main>
+    {/*
     <div className="flex justify-center items-center w-full m-auto bg-white">
       <AdBanner slot="9471912944"/>
     </div>
+    */}
     </>
   );
 }
